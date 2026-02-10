@@ -1,31 +1,7 @@
 export default function Main() {
   return (
     <>
-      <header>
-        <a href="">
-          <img src="" alt="" />
-        </a>
-
-        <nav>
-          <ul>
-            <li>
-              <a href=""> Home </a>
-            </li>
-            <li>
-              <a href=""> New </a>
-            </li>
-            <li>
-              <a href=""> Popular </a>
-            </li>
-            <li>
-              <a href=""> Trending </a>
-            </li>
-            <li>
-              <a href=""> Categories </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    
 
       <main>
         <section>
@@ -67,15 +43,7 @@ export default function Main() {
           fresh opportunities.
         </section>
       </main>
-      <footer>
-        <div>
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-            Frontend Mentor
-          </a>
-          . Coded by <a href="#">Your Name Here</a>.
-        </div>
-      </footer>
+     
     </>
   );
 }

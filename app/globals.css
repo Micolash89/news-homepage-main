@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
+/* ## Colors
+
+### Primary
+
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%) */
+
+@theme {
+  --color-primary-orange: hsl(35, 77%, 62%);
+  --color-primary-red: hsl(5, 85%, 63%);
+  --color-off-white: hsl(36, 100%, 99%);
+  --color-grayish-blue: hsl(233, 8%, 79%);
+  --color-dark-grayish-blue: hsl(236, 13%, 42%);
+  --color-very-dark-blue: hsl(240, 100%, 5%);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-orange:hsl(35, 77%, 62%);
+  --primary-red: hsl(5, 85%, 63%);
+
+  --secundary-off-white: hsl(36, 100%, 99%);
+  --secundary-grayish-blue: hsl(233, 8%, 79%);
+  --secundary-dark-grayish-blue: hsl(236, 13%, 42%);
+  --secundary-very-dark-blue: hsl(240, 100%, 5%);
+
+  --primary-white:white;
+  --primary-black:black;
+
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  
+
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+--color-text1:var(--secundary-dark-grayish-blue)
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-white);  
+  color: var(--primary-black);
 }
+
+

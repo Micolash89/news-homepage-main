@@ -20,7 +20,10 @@ export default function HeaderMobile() {
   return (
     <>
       <div className="flex h-16 items-center justify-between">
-        <div className="flex  items-center md:hidden">
+
+      <span>W</span>
+
+        <div className="flex  items-center md:hidden ">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -30,9 +33,9 @@ export default function HeaderMobile() {
             </SheetTrigger>
             <SheetContent side="right" className="w-70 sm:w-87.5">
               <SheetHeader>
-                <SheetTitle className="text-left">Navegación</SheetTitle>
+                <SheetTitle className="text-left"></SheetTitle>
               </SheetHeader>
-              <div className="flex flex-col space-y-4 mt-6 h-full">
+              <div className="flex flex-col space-y-4 mt-40 gap-3 h-full">
                 {/* {headerItems.map((item, index) => (
                   <Link
                     key={item.href + index}

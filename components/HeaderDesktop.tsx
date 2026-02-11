@@ -1,7 +1,5 @@
 import { headerItems } from "../app/lib/definitions/const";
 import { ItemsLinks } from "./Header";
-
- import React from 'react'
  
  export default function HeaderDesktop() {
    return (
@@ -21,7 +19,7 @@ import { ItemsLinks } from "./Header";
           <ul className="flex gap-10">
             {headerItems.map((e, index) => (
               <li key={index + "elements-items-header"}>
-                <ItemsLinks item={e} />
+                <ItemsLinks {...e} />
               </li>
             ))}
           </ul>

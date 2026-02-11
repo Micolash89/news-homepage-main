@@ -1,13 +1,10 @@
-import Image from "next/image";
-import React from "react";
-import { PrompsItemLinks } from "../app/lib/definitions/types";
-import { headerItems } from "../app/lib/definitions/const";
+import { headerItemsType } from "../app/lib/definitions/types";
 import HeaderDesktop from "./HeaderDesktop";
 import HeaderMobile from "./HeaderMobile";
 
 export default function Header() {
   return (
-    <header>
+    <header className="flex justify-end sm:block">
      
       <HeaderDesktop/>
 
@@ -17,14 +14,14 @@ export default function Header() {
 }
 
 
-export function ItemsLinks({ item }: PrompsItemLinks) {
+export function ItemsLinks({title,name,href  }: headerItemsType) {
   return (
     <a
       href=""
       className="cursor-pointer capitalize text-dark-grayish-blue font-medium hover:text-primary-orange"
     >
       {" "}
-      {item}{" "}
+      {title}{" "}
     </a>
   );
 }

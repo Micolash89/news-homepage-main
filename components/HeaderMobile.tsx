@@ -19,11 +19,11 @@ export default function HeaderMobile() {
 
   return (
     <>
-      <div className="flex h-16 items-center justify-between">
+      <div className="flex h-16 items-center justify-between md:hidden ">
 
       <span>W</span>
 
-        <div className="flex  items-center md:hidden ">
+        <div className="flex  items-center ">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">

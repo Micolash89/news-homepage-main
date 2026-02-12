@@ -3,7 +3,7 @@ import { ItemsLinks } from "./Header";
  
  export default function HeaderDesktop() {
    return (
-     <section className="hidden sm:flex justify-between text-base  ">
+     <section className="hidden md:flex justify-between text-base  ">
         <a href="" className="">
           w
           {/* <Image
@@ -11,7 +11,7 @@ import { ItemsLinks } from "./Header";
           alt="logo W."
           fill
           className="object-cover "
-          
+           sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
           /> */}
         </a>
 

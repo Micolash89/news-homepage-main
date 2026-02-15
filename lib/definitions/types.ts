@@ -21,3 +21,28 @@ export interface PrompsNewItemsType{
   cant:number;
   index:number
 }
+
+export interface TopItemsType{
+  title:string;
+  description:string;
+  href:string;
+  img:string
+}
+
+export interface PrompsTopItemsType{
+  title:string;
+  description:string;
+  href:string;
+  img:string;
+  index:number;
+}
+
+export interface FooterItemsType{
+  title:string;
+  url:string
+}
+
+export interface PromptsItemsFooterType{
+  title:string;
+  url:string
+}

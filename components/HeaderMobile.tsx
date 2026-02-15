@@ -13,14 +13,24 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { headerItems } from "@/lib/definitions/const";
 import { ItemsLinks } from "./Header";
+import Image from "next/image";
 
 export default function HeaderMobile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
-      <div className="flex h-16 items-center justify-between md:hidden ">
-        <span>W</span>
+      <div className="flex h-16 items-center justify-between md:hidden mb-10">
+        <Link href="/" className="">
+          <Image
+            src="/assets/images/logo.svg"
+            alt="logo"
+            height={50}
+            width={50}
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            className="bg-cover "
+          />
+        </Link>
 
         <div className="flex  items-center ">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>

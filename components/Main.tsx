@@ -1,6 +1,8 @@
-import { newItems } from "@/lib/definitions/const";
+import { newItems, topItems } from "@/lib/definitions/const";
 import NewComponent from "./NewComponent";
 import AboutComponent from "./AboutComponent";
+
+import TopComponent from "./TopComponent";
 
 export default function Main() {
   return (
@@ -26,11 +28,14 @@ export default function Main() {
           </div>
         </section>
 
-        <section>
-          01 Reviving Retro PCs What happens when old PCs are given modern
-          upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs
-          and budgets. 03 The Growth of Gaming How the pandemic has sparked
-          fresh opportunities.
+        <section className="flex flex-col gap-7">
+          {topItems &&
+            topItems.length > 0 &&
+            topItems.map((e, index) => (
+              <div key={index + e.title}>
+                <TopComponent {...e} index={index + 1} />
+              </div>
+            ))}
         </section>
       </main>
     </>

@@ -11,17 +11,26 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { headerItems } from "@/app/lib/definitions/const";
+import { headerItems } from "@/lib/definitions/const";
 import { ItemsLinks } from "./Header";
+import Image from "next/image";
 
 export default function HeaderMobile() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
-      <div className="flex h-16 items-center justify-between md:hidden ">
-
-      <span>W</span>
+      <div className="flex h-16 items-center justify-between md:hidden mb-10">
+        <Link href="/" className="">
+          <Image
+            src="/assets/images/logo.svg"
+            alt="logo"
+            height={50}
+            width={50}
+            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+            className="bg-cover "
+          />
+        </Link>
 
         <div className="flex  items-center ">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -36,20 +45,6 @@ export default function HeaderMobile() {
                 <SheetTitle className="text-left"></SheetTitle>
               </SheetHeader>
               <div className="flex flex-col space-y-4 mt-40 gap-3 h-full">
-                {/* {headerItems.map((item, index) => (
-                  <Link
-                    key={item.href + index}
-                    href={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-colors"
-                  >
-                    <span className="text-lg font-medium" title={item.title}>
-                      {item.title}
-                    </span>
-                    <span className="sr-only">{item.name}</span>
-                  </Link>
-                ))} */}
-
                 {headerItems.map((e, index) => (
                   <div key={e.name + index}>
                     <ItemsLinks {...e} />

@@ -1,4 +1,4 @@
-import { headerItems } from "../app/lib/definitions/const";
+import { headerItems } from "../lib/definitions/const";
 import { ItemsLinks } from "./Header";
  
  export default function HeaderDesktop() {

@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { headerItems } from "@/app/lib/definitions/const";
+import { headerItems } from "@/lib/definitions/const";
 import { ItemsLinks } from "./Header";
 
 export default function HeaderMobile() {
@@ -20,8 +20,7 @@ export default function HeaderMobile() {
   return (
     <>
       <div className="flex h-16 items-center justify-between md:hidden ">
-
-      <span>W</span>
+        <span>W</span>
 
         <div className="flex  items-center ">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -36,20 +35,6 @@ export default function HeaderMobile() {
                 <SheetTitle className="text-left"></SheetTitle>
               </SheetHeader>
               <div className="flex flex-col space-y-4 mt-40 gap-3 h-full">
-                {/* {headerItems.map((item, index) => (
-                  <Link
-                    key={item.href + index}
-                    href={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-accent transition-colors"
-                  >
-                    <span className="text-lg font-medium" title={item.title}>
-                      {item.title}
-                    </span>
-                    <span className="sr-only">{item.name}</span>
-                  </Link>
-                ))} */}
-
                 {headerItems.map((e, index) => (
                   <div key={e.name + index}>
                     <ItemsLinks {...e} />

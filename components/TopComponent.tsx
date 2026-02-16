@@ -11,7 +11,7 @@ export default function TopComponent({
   index,
 }: PrompsTopItemsType) {
   return (
-    <Link href={href} className="flex gap-10">
+    <Link href={href} className="flex gap-10 group">
       <div className="overflow-hidden max-w-[100] max-h-[200]">
         <Image
           src={img}
@@ -24,7 +24,7 @@ export default function TopComponent({
       </div>
       <div className="flex flex-col justify-between">
         <h5 className="text-3xl text-primary-red font-extrabold">0{index}</h5>
-        <h4 className="text-base font-extrabold text-very-dark-blue">
+        <h4 className="text-base font-extrabold text-very-dark-blue group-hover:text-primary-red">
           {title}
         </h4>
         <p className="text-sm text-grayish-blue font-semibold leading-6">

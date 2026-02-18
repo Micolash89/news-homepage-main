@@ -15,13 +15,12 @@ export default function Header() {
 
 export function ItemsLinks({ title, name, href }: HeaderItemsType) {
   return (
-    <Link
+     <Link
       href={href}
-      className="ml-7 sm:ml-0 cursor-pointer capitalize text-very-dark-blue sm:text-dark-grayish-blue font-medium hover:text-primary-orange text-xl sm:text-base"
+      className="ml-7 sm:ml-0 cursor-pointer capitalize text-very-dark-blue sm:text-dark-grayish-blue font-medium hover:text-primary-orange text-xl sm:text-base transition-colors duration-200"
       title={name}
     >
-      {" "}
-      {title}{" "}
+      {title}
     </Link>
   );
 }

@@ -10,7 +10,7 @@ Este proyecto es una solución al desafío [News Homepage](https://www.frontendm
 
 Este proyecto puede ser desplegado fácilmente en:
 
-- **[Vercel](https://vercel.com/)**
+- **[Vercel](https://news-homepage-main-eight-beta.vercel.app/)**
 
 ## 🚀 Características
 
@@ -82,6 +82,6 @@ Durante el desarrollo de este proyecto, se trabajaron los siguientes conceptos:
 
 **Tu Nombre**
 
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
-- Frontend Mentor: [@tu-usuario](https://www.frontendmentor.io/profile/tu-usuario)
+- GitHub: [@Micolash89](https://github.com/Micolash89)
+- LinkedIn: [Javier Espindola](https://www.linkedin.com/in/javier-espindola/)
+- Frontend Mentor: [@Micolash89](https://www.frontendmentor.io/profile/Micolash89)
